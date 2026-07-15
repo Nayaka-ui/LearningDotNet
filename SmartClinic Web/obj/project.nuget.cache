@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qlfbd+71T9E=",
+  "dgSpecHash": "35OSd9AYMhI=",
   "success": true,
-  "projectFilePath": "D:\\Clinic\\SMARTClinic_Updated 1\\SMARTClinic\\SmartClinic Web\\SmartClinic.Web.csproj",
+  "projectFilePath": "D:\\GitTest\\SmartClinic Web\\SmartClinic.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
@@ -124,9 +124,9 @@
       "code": "NU1510",
       "level": "Warning",
       "message": "PackageReference Microsoft.AspNetCore.Session will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
-      "projectPath": "D:\\Clinic\\SMARTClinic_Updated 1\\SMARTClinic\\SmartClinic Web\\SmartClinic.Web.csproj",
+      "projectPath": "D:\\GitTest\\SmartClinic Web\\SmartClinic.Web.csproj",
       "warningLevel": 1,
-      "filePath": "D:\\Clinic\\SMARTClinic_Updated 1\\SMARTClinic\\SmartClinic Web\\SmartClinic.Web.csproj",
+      "filePath": "D:\\GitTest\\SmartClinic Web\\SmartClinic.Web.csproj",
       "libraryId": "Microsoft.AspNetCore.Session",
       "targetGraphs": [
         "net10.0"
@@ -136,9 +136,9 @@
       "code": "NU1510",
       "level": "Warning",
       "message": "PackageReference Microsoft.Extensions.Http will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
-      "projectPath": "D:\\Clinic\\SMARTClinic_Updated 1\\SMARTClinic\\SmartClinic Web\\SmartClinic.Web.csproj",
+      "projectPath": "D:\\GitTest\\SmartClinic Web\\SmartClinic.Web.csproj",
       "warningLevel": 1,
-      "filePath": "D:\\Clinic\\SMARTClinic_Updated 1\\SMARTClinic\\SmartClinic Web\\SmartClinic.Web.csproj",
+      "filePath": "D:\\GitTest\\SmartClinic Web\\SmartClinic.Web.csproj",
       "libraryId": "Microsoft.Extensions.Http",
       "targetGraphs": [
         "net10.0"
@@ -148,9 +148,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'AutoMapper' 12.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
-      "projectPath": "D:\\Clinic\\SMARTClinic_Updated 1\\SMARTClinic\\SmartClinic Web\\SmartClinic.Web.csproj",
+      "projectPath": "D:\\GitTest\\SmartClinic Web\\SmartClinic.Web.csproj",
       "warningLevel": 1,
-      "filePath": "D:\\Clinic\\SMARTClinic_Updated 1\\SMARTClinic\\SmartClinic Web\\SmartClinic.Web.csproj",
+      "filePath": "D:\\GitTest\\SmartClinic Web\\SmartClinic.Web.csproj",
       "libraryId": "AutoMapper",
       "targetGraphs": [
         "net10.0"
@@ -160,9 +160,9 @@
       "code": "NU1901",
       "level": "Warning",
       "message": "Package 'NuGet.Packaging' 6.12.1 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
-      "projectPath": "D:\\Clinic\\SMARTClinic_Updated 1\\SMARTClinic\\SmartClinic Web\\SmartClinic.Web.csproj",
+      "projectPath": "D:\\GitTest\\SmartClinic Web\\SmartClinic.Web.csproj",
       "warningLevel": 1,
-      "filePath": "D:\\Clinic\\SMARTClinic_Updated 1\\SMARTClinic\\SmartClinic Web\\SmartClinic.Web.csproj",
+      "filePath": "D:\\GitTest\\SmartClinic Web\\SmartClinic.Web.csproj",
       "libraryId": "NuGet.Packaging",
       "targetGraphs": [
         "net10.0"
@@ -172,9 +172,9 @@
       "code": "NU1901",
       "level": "Warning",
       "message": "Package 'NuGet.Protocol' 6.12.1 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
-      "projectPath": "D:\\Clinic\\SMARTClinic_Updated 1\\SMARTClinic\\SmartClinic Web\\SmartClinic.Web.csproj",
+      "projectPath": "D:\\GitTest\\SmartClinic Web\\SmartClinic.Web.csproj",
       "warningLevel": 1,
-      "filePath": "D:\\Clinic\\SMARTClinic_Updated 1\\SMARTClinic\\SmartClinic Web\\SmartClinic.Web.csproj",
+      "filePath": "D:\\GitTest\\SmartClinic Web\\SmartClinic.Web.csproj",
       "libraryId": "NuGet.Protocol",
       "targetGraphs": [
         "net10.0"

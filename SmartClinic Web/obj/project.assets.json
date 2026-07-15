@@ -5621,11 +5621,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Clinic\\SMARTClinic_Updated 1\\SMARTClinic\\SmartClinic Web\\SmartClinic.Web.csproj",
+      "projectUniqueName": "D:\\GitTest\\SmartClinic Web\\SmartClinic.Web.csproj",
       "projectName": "SmartClinic.Web",
-      "projectPath": "D:\\Clinic\\SMARTClinic_Updated 1\\SMARTClinic\\SmartClinic Web\\SmartClinic.Web.csproj",
+      "projectPath": "D:\\GitTest\\SmartClinic Web\\SmartClinic.Web.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "D:\\Clinic\\SMARTClinic_Updated 1\\SMARTClinic\\SmartClinic Web\\obj\\",
+      "outputPath": "D:\\GitTest\\SmartClinic Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
