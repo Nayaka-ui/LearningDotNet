@@ -1,0 +1,17 @@
+D:\SMARTClinic\ConsoleApp1\bin\Debug\net10.0\ConsoleApp1.exe
+D:\SMARTClinic\ConsoleApp1\bin\Debug\net10.0\ConsoleApp1.deps.json
+D:\SMARTClinic\ConsoleApp1\bin\Debug\net10.0\ConsoleApp1.runtimeconfig.json
+D:\SMARTClinic\ConsoleApp1\bin\Debug\net10.0\ConsoleApp1.dll
+D:\SMARTClinic\ConsoleApp1\bin\Debug\net10.0\ConsoleApp1.pdb
+D:\SMARTClinic\ConsoleApp1\bin\Debug\net10.0\BCrypt-Net-Next.dll
+D:\SMARTClinic\ConsoleApp1\obj\Debug\net10.0\ConsoleApp1.csproj.AssemblyReference.cache
+D:\SMARTClinic\ConsoleApp1\obj\Debug\net10.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\SMARTClinic\ConsoleApp1\obj\Debug\net10.0\ConsoleApp1.AssemblyInfoInputs.cache
+D:\SMARTClinic\ConsoleApp1\obj\Debug\net10.0\ConsoleApp1.AssemblyInfo.cs
+D:\SMARTClinic\ConsoleApp1\obj\Debug\net10.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\SMARTClinic\ConsoleApp1\obj\Debug\net10.0\ConsoleA.CB28C8CC.Up2Date
+D:\SMARTClinic\ConsoleApp1\obj\Debug\net10.0\ConsoleApp1.dll
+D:\SMARTClinic\ConsoleApp1\obj\Debug\net10.0\refint\ConsoleApp1.dll
+D:\SMARTClinic\ConsoleApp1\obj\Debug\net10.0\ConsoleApp1.pdb
+D:\SMARTClinic\ConsoleApp1\obj\Debug\net10.0\ConsoleApp1.genruntimeconfig.cache
+D:\SMARTClinic\ConsoleApp1\obj\Debug\net10.0\ref\ConsoleApp1.dll

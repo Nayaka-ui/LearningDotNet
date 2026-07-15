@@ -1,0 +1,356 @@
+﻿@{
+    ViewData["Title"] = "Billing Queue";
+}
+
+<!-- Breadcrumb -->
+<div class="page-header">
+    <div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-1">
+                <li class="breadcrumb-item">
+                    <a href="#" class="text-decoration-none">
+                        Smart Clinic
+                    </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    Billing Queue
+                </li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<div class="doctor-terminal-container">
+
+    <!-- TOP STATS -->
+    <div class="stats-grid">
+
+        <div class="stat-card">
+            <div class="stat-title">TOTAL</div>
+            <h2 id="totalCount">0</h2>
+        </div>
+
+        <div class="stat-card success">
+            <div class="stat-title">PAID</div>
+            <h2 id="paidCount">0</h2>
+        </div>
+
+        <div class="stat-card warning">
+            <div class="stat-title">PENDING</div>
+            <h2 id="pendingCount">0</h2>
+        </div>
+
+        <div class="stat-card hold">
+            <div class="stat-title">PHARMACY</div>
+            <h2 id="pharmacyCount">0</h2>
+        </div>
+
+        <div class="stat-card danger">
+            <div class="stat-title">UNPAID</div>
+            <h2 id="unpaidCount">0</h2>
+        </div>
+
+        <div class="stat-card review">
+            <div class="stat-title">COMPLETED</div>
+            <h2 id="completedCount">0</h2>
+        </div>
+
+    </div>
+
+    <!-- MIDDLE GRID -->
+    <div class="middle-grid">
+
+        <!-- ACTION PANEL -->
+        <div class="action-panel">
+
+            <div class="btn-row">
+
+                <button class="action-btn primary"
+                        id="btnCall">
+                    📞 CALL
+                </button>
+
+                <button class="action-btn danger"
+                        id="btnEnd">
+                    ⛔ END
+                </button>
+
+                <button class="action-btn secondary"
+                        id="btnRecall">
+                    🔄 RECALL
+                </button>
+
+                <button class="action-btn warning"
+                        id="btnHold">
+                    ⏸ HOLD
+                </button>
+
+                <button class="action-btn dark"
+                        id="btnSkip">
+                    ⏭ SKIP
+                </button>
+
+                <button class="action-btn primary"
+                        id="btnNext">
+                    ➡ NEXT
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- CURRENT BILLING -->
+        <div class="current-call-card">
+
+            <small>CURRENT BILLING</small>
+
+            <h1 id="currentToken">
+                ---
+            </h1>
+
+            <h5 id="currentPatient">
+                No Patient Selected
+            </h5>
+
+            <div class="mt-2">
+
+                <span id="paymentStatus"
+                      class="badge bg-warning">
+                    Payment Pending
+                </span>
+
+            </div>
+
+            <h2 class="mt-3 text-success fw-bold">
+                ₹ <span id="currentAmount">0.00</span>
+            </h2>
+
+            <small>
+                Total Payable Amount
+            </small>
+
+        </div>
+
+        <!-- NEXT 3 QUEUE -->
+        <div class="queue-card">
+
+            <div class="card-header">
+                NEXT 3 QUEUE
+            </div>
+
+            <div id="nextQueueList">
+
+                <div class="text-muted">
+                    No upcoming patients
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- BOTTOM GRID -->
+    <div class="bottom-grid">
+
+        <!-- PENDING -->
+        <div class="queue-card">
+
+            <div class="card-header">
+                PAYMENT PENDING
+            </div>
+
+            <div id="pendingQueueList">
+
+                <div class="text-muted">
+                    No pending payments
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PAID -->
+        <div class="queue-card">
+
+            <div class="card-header">
+                PAYMENT COMPLETED
+            </div>
+
+            <div id="paidQueueList">
+
+                <div class="text-muted">
+                    No completed payments
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PHARMACY -->
+        <div class="queue-card">
+
+            <div class="card-header">
+                SENT TO PHARMACY
+            </div>
+
+            <div id="pharmacyQueueList">
+
+                <div class="text-muted">
+                    No pharmacy requests
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- BILLING TABLE -->
+    <div class="card mt-3">
+
+        <div class="card-header">
+
+            <h5 class="mb-0">
+                Billing Queue List
+            </h5>
+
+        </div>
+
+        <div class="card-body">
+
+            <div class="table-responsive">
+
+                <table class="table align-middle"
+                       id="tblBillingQueue">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Token No</th>
+                            <th>Patient Name</th>
+                            <th>Consultation</th>
+                            <th>Lab</th>
+                            <th>Scan</th>
+                            <th>Medicine</th>
+                            <th>Total</th>
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- PAYMENT MODAL -->
+<div class="modal fade"
+     id="paymentModal"
+     tabindex="-1">
+
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Complete Payment
+                </h5>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <input type="hidden"
+                       id="paymentBillingId" />
+
+                <input type="hidden"
+                       id="paymentTokenId" />
+
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        Total Amount
+                    </label>
+
+                    <input id="txtPaymentAmount"
+                           class="form-control"
+                           readonly />
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        Payment Method
+                    </label>
+
+                    <select id="ddlPaymentMethod"
+                            class="form-select">
+
+                        <option value="Cash">Cash</option>
+                        <option value="Card">Card</option>
+                        <option value="UPI">UPI</option>
+
+                    </select>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        Remarks
+                    </label>
+
+                    <textarea id="txtPaymentRemarks"
+                              class="form-control"
+                              rows="3"></textarea>
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    Cancel
+                </button>
+
+                <button id="btnConfirmPayment"
+                        class="btn btn-success">
+                    Confirm Payment
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts {
+
+    <script src="~/js/billingqueue.js"
+            asp-append-version="true"></script>
+
+}
